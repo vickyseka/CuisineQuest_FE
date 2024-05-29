@@ -68,7 +68,7 @@ import TabModal from "./TabModal";
   // console.log("id",restaurantId);
   const getRestaurant = () => {
     axios
-      .get(`http://localhost:4000/getallrestById/${restaurantId}`)
+      .get(`https://cuisinequest-be-3.onrender.com/getallrestById/${restaurantId}`)
       .then((response) => response.data)
       .then((data) => {
         setRestaurantData(data);

@@ -21,7 +21,7 @@ const TabModal = (props) => {
   const getRestaurant = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4000/getallrestById/${restaurantId}`
+        `https://cuisinequest-be-3.onrender.com/getallrestById/${restaurantId}`
       );
       const data = response.data;
       setRestaurantData(data);
@@ -34,7 +34,7 @@ const TabModal = (props) => {
   const menuItems = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4000/menuItemByName/${restaruantName}`
+        `https://cuisinequest-be-3.onrender.com/menuItemByName/${restaruantName}`
       );
       const data = response.data;
       setMenuItem(data);

@@ -9,7 +9,7 @@ const QuickSearch = () => {
 
   const getMealData = () => {
     axios
-      .get(`http://localhost:4000/getallmeal`)
+      .get(`https://cuisinequest-be-3.onrender.com/getallmeal`)
       .then((response) => response.data)
       .then((data) => {
         setMealData(data);

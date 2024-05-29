@@ -8,7 +8,7 @@
 // const Wallpaper = () => {
 //   const [eventDetails, setEventDetails] = useState([])
 //   function getEvents() {
-//       axios.get("http://localhost:4000/getallloc")
+//       axios.get("https://cuisinequest-be-3.onrender.com/getallloc")
 //           .then(response => response.data)
 //           .then((data) => {
 //               setEventDetails(data)
@@ -115,7 +115,7 @@ const Wallpaper = ({ history }) => {
 
   const getEvents = () => {
     axios
-      .get("http://localhost:4000/getallloc")
+      .get("https://cuisinequest-be-3.onrender.com/getallloc")
       .then((response) => response.data)
       .then((data) => {
         setEventDetails(data);
@@ -131,7 +131,7 @@ const Wallpaper = ({ history }) => {
     sessionStorage.setItem("locationId",locationId)
     console.log("location id",locationId);
     axios
-      .get(`http://localhost:4000/getallrestLocationId/${locationId}`)
+      .get(`https://cuisinequest-be-3.onrender.com/getallrestLocationId/${locationId}`)
       .then((response) => response.data)
       .then((data) => {
         setRestaurants(data);
