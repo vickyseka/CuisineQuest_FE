@@ -1,0 +1,56 @@
+.main{
+    background-image: linear-gradient(rgba(238, 255, 0, 0),rgba(143, 0, 0, 0.582)),url('../Assets/food_background.jpg');
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+.foodBox{
+    margin-top: 2%;
+    height: 150px;
+    text-align:justify ;
+    padding: 0px;
+    margin-top: 5px;
+    border: 1px solid white;
+    box-shadow: 3px 3px rgb(212, 209, 209);
+}
+img{
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        float: left;
+        padding: 0px;
+}
+.box h1,h3{
+    text-align: justify;
+    margin-left: 5px;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .suggestions {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    border-radius: 5px;
+    margin-top: 3px;
+  }
+  .suggestions li{
+    padding: 10px;
+    border-bottom: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    border-left: 50px solid red;
+   
+  }
